@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dog Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js">index.js</script>
 </head>
 <body>
-    
+    <div class="main-container">
+        <div class="container-1">
+            <img src="dog.png" alt="image" class="image">
+        </div>
+        <div class="container-2">
+            <h1 class="h1">Dog Age Calculator</h1>
+            <input id="human-age" class="input" placeholder="Human years" type="number" onchange="handleChange(event)" />
+            <button class="button" onclick="handleClick()">CALCULATE DOG AGE</button>
+            <p id="result" class="text" class="hidden">Result</p>
+        </div>
+</div>
 </body>
 </html>
